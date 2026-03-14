@@ -7,27 +7,52 @@
 
 ## 📊 Column Structure (10 Training Signals)
 
-| Column | Sample | Purpose |
-|--------|--------|---------|
-| `term` | milestone | Core PM vocabulary |
-| `spanish_term` | hito | ES<>EN alignment |
-| `english_sentence` | "Project milestone achieved" | Contextual usage |
-| `spanish_sentence` | "El hito del proyecto se alcanzó" | Bilingual transfer |
-| `POS` | NOUN | Grammar tagging |
-| `CEFR` | B2 | Proficiency level |
-| `ipa` | /ˈmaɪl.stoʊn/ | Pronunciation |
-| `intent` | progress | PMBOK domain |
-| `risk_level` | MEDIUM | Project impact |
-| `frequency` | 8923 | Usage weighting |
+| Column           | Sample                       | Purpose                |
+| ---------------- | ---------------------------- | ---------------------- |
+| english          | business impact              | Core PM term           |
+| spanish_sentence | El impacto del negocio...    | Full bilingual context |
+| POS              | NOUN                         | Grammar tagging        |
+| CEFR             | B2                           | Proficiency level      |
+| family_size      | 3                            | Morphological family   |
+| frequency        | 2306                         | Usage frequency        |
+| english_example  | Business impact justifies... | English context        |
 
 ## 📈 Dataset Stats
-Total rows: 500+ | PMP/PRINCE2/Agile/Scrum coverage
-Risk: HIGH(35%) MEDIUM(45%) LOW(20%)
-CEFR: B1(40%) B2(45%) C1(15%)
+| Metric            | Value                          |
+| ----------------- | ------------------------------ |
+| Rows              | 500+ PM terms                  |
+| Columns           | 7 (IPA removed for encoding)   |
+| Certifications    | PMP, PRINCE2, Agile, Scrum     |
+| Risk Distribution | HIGH(35%) MEDIUM(45%) LOW(20%) |
+| CEFR Coverage     | B1(40%) B2(45%) C1(15%)        |
+
+💰 Market Value
+| Opportunity      | Value                    |
+| ---------------- | ------------------------ |
+| PM Certification | LATAM → PMP/PMI          |
+| Consulting       | $120-200/hour            |
+| Enterprise PMO   | Fortune 500 localization |
+| EdTech           | PM training apps         |
+
+🎯 Target Applications
+| Role      | Use Case                        |
+| --------- | ------------------------------- |
+| PMs 👨‍💼 | PMP vocab + stakeholder comms   |
+| PMO 📊    | Risk assessment + PMBOK         |
+| EdTech 📱 | Flashcards + certification prep |
+| AI 🤖     | PM intent classification        |
+
+📥 Technical Specs
+✅ Format: CSV (Pandas/Excel/Google Sheets)
+
+✅ Encoding: UTF-8 (perfect Spanish tildes)
+
+✅ Size: Clean 7-column production-ready
+
+✅ Preview: Perfect GitHub columns
 
 
 **View:** [Project Management Terminology Dataset.csv](Project Management Terminology Dataset.csv)
-
 ---
 **© 2026 Juan Carlos Hernandez** | *Cambridge ESL English Language Expert | Computational Linguistics*
 
